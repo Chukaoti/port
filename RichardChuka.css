@@ -1,0 +1,408 @@
+@import url('https://font');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.background{
+    color: whitesmoke;
+}
+
+nav{
+    position:relative;
+    width: 100%;
+    padding: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.4s ease;
+    z-index: 998;
+    background: black;
+    opacity: 0.8;
+}
+
+.sticky{
+    padding: 13px 0;
+    background: #4070F4;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    
+}
+
+.logo a{
+    font-size: 40px;
+    font-weight: 500;
+    color: #4070F4;
+    text-decoration: none;
+}
+
+.icon{
+    font-size: 18px;
+    margin: 0 6px;
+    color: #4070F4;
+}
+
+.btnn,
+.cancel-btn{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    right: 30px;
+    top: 20px;
+}
+
+nav .btnn{
+    color: #4070F4;
+}
+
+@media (max-width: 750px){
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        max-width: 400px;
+        background: #0E2431; 
+        padding-top: 60px;
+        transition: all 0.5s ease;
+    }
+
+    .navbar .active .menu{
+        left: 0;
+    }
+
+    .menu li a{
+        font-size: 23px;
+        color: whitesmoke;
+        display: block;
+        margin: 10px 0;
+    }
+    .icon{
+        display: none;
+    }
+}
+
+.menu{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu li{
+    margin: 0 8px;
+    list-style: none;
+}
+
+.menu li{
+    margin: 0 8px;
+    list-style: none;
+    font-size: 18px;
+    font-size: 500;
+    color: black;
+}
+
+
+.home{
+    height: 100vh;
+    width: 100%;
+    background: url(imc.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'ubuntu', sans-serif;
+}
+
+.home-content{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-one{
+    font-size: 25px;
+}
+
+.text-two{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.text-three{
+    font-size: 40px;
+
+}
+
+.home-content .text-three .tyt{
+    margin-left: 10px;
+    animation: typing 5s steps(15) infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid;
+} 
+
+@keyframes typing {
+    0%{
+        width: 0ch;
+    }
+    50%{
+      width: 24ch;
+    }
+    100%{
+        width: 0ch;
+    }
+}
+
+.text-four{
+    font-size: 23px;
+
+}
+
+.button{
+    outline: none;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+    background: #4070F4;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.button:hover{
+    color: #4070F4;
+    background-color: #FFF;
+    border-color: #4070F4;
+}
+.rtn{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.abt1 img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.abt1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    width: 80%;
+    margin: 40px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.abt{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.abt span{
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+.abt span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 150px;
+    background: #4070F4;
+}
+
+.abt span::after{
+    width: 70%;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: -7px;
+}
+
+.skill{
+    background: #F0F8Ff;
+}
+
+.skill .content{
+    padding: 40px 0;
+}
+
+.skill1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill1 .left{
+    width: 50%;
+
+}
+
+.skill1 .left p{
+    color: #0E2431;
+    text-align: justify;
+}
+
+.skill1 .left .exp{
+    display: flex;
+    align-items: center;
+}
+
+.skill1 .left .exp .num{
+    font-size: 80px;
+    color: #0E2431;
+    font-weight: 500;
+
+}
+
+.skill1 .left .exp .exp1{
+    font-size: 20px;
+    color: #0E2431;
+    font-weight: 500;
+}
+
+.boxes{
+    width: 99%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #4070F4;
+    text-align: center;
+}
+
+.skill .skill1 .boxes .box{
+    width: calc(100% / 2 -20px);
+}
+
+.skill1 .boxes{
+    width: 45%;
+    
+}
+
+.skill1 .boxes .box .topic{
+    font-size: 60px;
+    font-weight: 500;
+    color: #4070F4;
+}
+
+.boxes .box .num{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.serp{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.serp1{
+    width: calc(100%/ 3- 20px);
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.service .serp .serp1 .icon{
+    height: 50px;
+    width: 50px;
+    border: #FFF;
+    background: #4070F4;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50%;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+
+.service .serp .serp1:hover .icon{
+    background: #FFF;
+    color: #4070F4;
+}
+
+.serp1:hover{
+    background: #4070F4;
+    color: #FFF;
+}
+
+.serp1:hover .topic{
+    color: #FFF;
+
+}
+
+.contact .cm{
+    text-align: center;
+    margin: auto;
+    width: 800px;
+}
+
+.tp{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cm{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fit{
+    text-align: center;
+    background: #4070F4;
+    padding-left: 15px 0;
+
+}
+
+.fit .txt1 span a{
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fit .txt1 span a:hover{
+    text-decoration: underline;
+
+}
+
+.sp{
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact{
+    background: #F0F8Ff;
+}
+
